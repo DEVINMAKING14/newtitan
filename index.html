@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Titan Edge — The World's Slimmest Watch</title>
+  <meta name="description" content="Discover the Titan Edge — a masterpiece of ultra-slim engineering with sapphire crystal, Japanese quartz movement, and premium leather craftsmanship." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">TITAN</div>
+      <div class="loader-sub">EDGE</div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loaderFill"></div>
+      </div>
+      <div class="loader-percent" id="loaderPercent">0%</div>
+    </div>
+  </div>
+
+  <!-- Fixed Canvas Background -->
+  <canvas id="frameCanvas"></canvas>
+
+  <!-- Scroll Container -->
+  <div id="scrollContainer">
+
+    <!-- Section 1: Hero -->
+    <section class="content-section" id="sectionHero">
+      <div class="section-inner hero-content">
+        <div class="hero-badge">INTRODUCING</div>
+        <h1 class="hero-title">
+          <span class="hero-title-line">TITAN</span>
+          <span class="hero-title-line hero-title-accent">EDGE</span>
+        </h1>
+        <p class="hero-tagline">Where precision meets elegance.<br/>The world's slimmest watch.</p>
+        <div class="scroll-indicator">
+          <div class="scroll-line"></div>
+          <span>Scroll to explore</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Precision -->
+    <section class="content-section" id="sectionPrecision">
+      <div class="section-inner">
+        <div class="section-label">01 — PRECISION</div>
+        <h2 class="section-title">Engineered<br/>for Perfection</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="24" cy="24" r="20"/>
+                <path d="M24 8v16l10 6"/>
+              </svg>
+            </div>
+            <h3>Japanese Quartz</h3>
+            <p>Miyota movement delivering ±20 sec/month accuracy with unmatched reliability.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="8" y="8" width="32" height="32" rx="4"/>
+                <path d="M8 24h32M24 8v32"/>
+              </svg>
+            </div>
+            <h3>Sapphire Crystal</h3>
+            <p>Scratch-resistant sapphire glass rated 9 on Mohs scale — second only to diamond.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M24 4L4 14v16l20 14 20-14V14L24 4z"/>
+                <path d="M24 18v16"/>
+              </svg>
+            </div>
+            <h3>Gold-Tone Case</h3>
+            <p>PVD-coated stainless steel with a luxurious gold finish that resists tarnish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Craftsmanship -->
+    <section class="content-section" id="sectionCraft">
+      <div class="section-inner craft-layout">
+        <div class="section-label">02 — CRAFTSMANSHIP</div>
+        <h2 class="section-title">Artistry in<br/>Every Detail</h2>
+        <div class="craft-details">
+          <div class="craft-item">
+            <span class="craft-number">01</span>
+            <div>
+              <h4>Genuine Leather Strap</h4>
+              <p>Hand-stitched crocodile-textured leather, tanned for durability and suppleness that only improves with age.</p>
+            </div>
+          </div>
+          <div class="craft-item">
+            <span class="craft-number">02</span>
+            <div>
+              <h4>Sunray Dial Finish</h4>
+              <p>Rich brown dial with a brushed sunray pattern that catches light from every angle, creating depth and movement.</p>
+            </div>
+          </div>
+          <div class="craft-item">
+            <span class="craft-number">03</span>
+            <div>
+              <h4>Applied Hour Markers</h4>
+              <p>Individually placed gold-tone indices, precision-cut and polished to create a three-dimensional dial surface.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Engineering -->
+    <section class="content-section" id="sectionEngineering">
+      <div class="section-inner">
+        <div class="section-label">03 — ENGINEERING</div>
+        <h2 class="section-title">Ultra-Slim<br/>Architecture</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <div class="spec-value">5.5<span class="spec-unit">mm</span></div>
+            <div class="spec-label">Case Thickness</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-value">30<span class="spec-unit">m</span></div>
+            <div class="spec-label">Water Resistance</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-value">28<span class="spec-unit">mm</span></div>
+            <div class="spec-label">Case Width</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-value">42<span class="spec-unit">mm</span></div>
+            <div class="spec-label">Lug to Lug</div>
+          </div>
+        </div>
+        <p class="specs-note">The Titan Edge redefines what's possible — housing a full quartz movement in a case thinner than two stacked coins.</p>
+      </div>
+    </section>
+
+    <!-- Section 5: CTA -->
+    <section class="content-section" id="sectionCTA">
+      <div class="section-inner cta-content">
+        <div class="cta-eyebrow">OWN THE EDGE</div>
+        <h2 class="cta-title">Make Time<br/>Yours</h2>
+        <div class="cta-price">
+          <span class="cta-price-currency">₹</span>
+          <span class="cta-price-value">12,995</span>
+        </div>
+        <a href="#" class="cta-button" id="shopNowBtn">
+          <span>Shop Now</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <p class="cta-sub">Free shipping · 2-year warranty · 30-day returns</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Navbar (appears after scroll) -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="nav-titan">TITAN</span>
+      <span class="nav-edge">EDGE</span>
+    </div>
+    <div class="nav-links">
+      <a href="#sectionPrecision">Precision</a>
+      <a href="#sectionCraft">Craft</a>
+      <a href="#sectionEngineering">Specs</a>
+      <a href="#sectionCTA" class="nav-cta">Buy Now</a>
+    </div>
+  </nav>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
